@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background: hsl(130, 95%, 65%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 64.8vmin;
+  height: 64.8vmin;
+  border-radius: 50%;
+  translate: -50% -50%;
+  overflow: hidden;
+  box-shadow: -3.5vmin -1vmin 20vmin 5.8vmin hsl(130, 75%, 10%), inset 4.5vmin -1vmin 8vmin 7vmin hsl(130, 75%, 5%);
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 78vmin;
+  height: 78vmin;
+  border-radius: 50%;
+  background:hsl(0, 10%, 100%);
+  filter: blur(18vmin);
+}
+
+.globe-1 {
+  position: absolute;
+  top: 0;
+  left: -52.4vmin;
+  height: 64.8vmin;
+  z-index: -1;
+}
+
+.globe-2 {
+  position: absolute;
+  top: 0;
+  left: -177.2vmin;
+  height: 64.8vmin;
+  z-index: -1;
+}
